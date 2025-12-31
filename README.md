@@ -14,6 +14,26 @@
   [![Mypy](https://github.com/lichess-bot-devs/lichess-bot/actions/workflows/mypy.yml/badge.svg)](https://github.com/lichess-bot-devs/lichess-bot/actions/workflows/mypy.yml)
 
 </div>
+# AI Chessbot for Lichess (Artificial Intelligence Exam)
+
+This repository contains my AI-driven Lichess chess bot built using **lichess-bot** and a **homemade engine**.
+
+## Bot + Engine
+- Bot account: `ZainMasalabot` (BOT)
+- Engine: `AlphaBetaEngine` in `homemade.py`
+- AI approach:
+  - Negamax minimax + alpha–beta pruning
+  - Evaluation = material + piece-square tables + basic king safety + small mobility bonus
+  - Time-based depth selection (adapts to bullet/blitz/rapid)
+  - Transposition table (Zobrist hash cache)
+
+## Quickstart (Windows)
+```powershell
+cd C:\Users\Gebruiker\Downloads\Ai\ai-chessbot-lichess
+pip install -r requirements.txt
+$env:LICHESS_BOT_TOKEN="YOUR_TOKEN_HERE"
+copy config.yml.default config.yml
+py lichess-bot.py -v
 
 ## Overview
 

@@ -425,7 +425,7 @@ class ComboEngine(MinimalEngine):
 
 # --- compatibility for lichess-bot test harness ---
 # test_bot/homemade.py imports ExampleEngine, so keep this alias.
-ExampleEngine = AlphaBetaEngine
+
 
 # --- compatibility for lichess-bot test harness ---
 class ExampleEngine(AlphaBetaEngine):
