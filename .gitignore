@@ -9,3 +9,21 @@ lichess_bot_auto_logs/*
 *.log
 *.txt
 TEMP/*
+# Secrets
+config.yml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Logs / outputs
+*.log
+*.pgn
+
+# OS
+.DS_Store
+Thumbs.db
